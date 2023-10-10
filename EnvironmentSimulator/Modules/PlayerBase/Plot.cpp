@@ -87,7 +87,7 @@ void Plot::CleanUp()
 
     printf("Closing plot window\n");
 #ifdef __EMSCRIPTEN__
-    EMSCRIPTEN_MAINLOOP_END;
+    //EMSCRIPTEN_MAINLOOP_END;
 #endif
 
     // Cleanup

@@ -32,6 +32,12 @@ set(PUGIXML_INCLUDE_DIR
     "${CMAKE_CURRENT_SOURCE_DIR}/../../../externals/pugixml")
 set(EXPR_INCLUDE_DIR
     "${CMAKE_CURRENT_SOURCE_DIR}/../../../externals/expr")
+set(IMGUI_INCLUDE_DIR
+    "${CMAKE_CURRENT_SOURCE_DIR}/../../../externals/implot/linux/include/imgui")
+set(IMPLOT_INCLUDE_DIR
+    "${CMAKE_CURRENT_SOURCE_DIR}/../../../externals/implot/linux/include/implot")
+set(IMGUI_IMPL_GLFW_INCLUDE_DIR
+    "${CMAKE_CURRENT_SOURCE_DIR}/../../../externals/implot/linux/include/imgui/backends")
 
 file(
     GLOB
@@ -91,6 +97,9 @@ include_directories(
     ${COMMON_MINI_INCLUDE_DIR}
     ${PUGIXML_INCLUDE_DIR}
     ${EXPR_INCLUDE_DIR}
+    ${IMPLOT_INCLUDE_DIR}
+    ${IMGUI_INCLUDE_DIR}
+    ${IMGUI_IMPL_GLFW_INCLUDE_DIR}
     esminijs.hpp)
 
 if(EMSCRIPTEN)
