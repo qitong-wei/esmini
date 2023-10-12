@@ -130,7 +130,7 @@ if(EMSCRIPTEN)
       -s FORCE_FILESYSTEM=1 \
       -s ALLOW_MEMORY_GROWTH=1 \
       -s WASM_ASYNC_COMPILATION=0 \
-      -s WASM=0 \
+      -s WASM=1 \
       -s SINGLE_FILE=1 \
   ")
 endif()
